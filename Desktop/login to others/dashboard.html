@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<style>
+    body{
+        background-color:rgb(72, 103, 243);
+    }
+    .header{
+        width: 2000px;
+        height: 120px;
+        background-color: black;
+    }
+    #welcome{
+        font-size: 45px;
+        
+    }
+</style>
+<body>
+    <header class="header">
+    </header>
+    <div id="welcome"></div>
+</body>
+<script>
+     let localInforma = JSON.parse(localStorage.getItem("userInfo"));
+     let welcome = document.getElementById("welcome")
+    
+        welcome.innerHTML = ` I Welcome   you "${localInforma[0].name}" To This Page`
+    
+</script>
+</html>
