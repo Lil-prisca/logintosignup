@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(72, 103, 243);
+}
+.header{
+    width: 2000px;
+    height: 120px;
+    background-color: black;
+}
+#welcome{
+    font-size: 45px;
+    
+}
